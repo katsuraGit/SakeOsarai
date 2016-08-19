@@ -14,7 +14,7 @@
         </Grid.ColumnDefinitions>
         <TextBlock x:Name="textBlock" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="47" Margin="52,52,0,0" TextWrapping="Wrap" Text="お酒アプリ復習" VerticalAlignment="Top" Width="354"/>
         <TextBox x:Name="textBox" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="78" Margin="52,104,0,0" TextWrapping="Wrap" Text="お酒の名前！" VerticalAlignment="Top" Width="354"/>
-        <Button x:Name="button" Grid.ColumnSpan="2" Content="実行" HorizontalAlignment="Left" Height="78" Margin="451,104,0,0" VerticalAlignment="Top" Width="184"/>
+        <Button x:Name="button" Grid.ColumnSpan="2" Content="実行" HorizontalAlignment="Left" Height="78" Margin="451,104,0,0" VerticalAlignment="Top" Width="184" Click="button_Click"/>
         <ListView x:Name="listView" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="204" Margin="52,231,0,0" VerticalAlignment="Top" Width="354"/>
 
     </Grid>

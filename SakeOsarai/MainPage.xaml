@@ -7,15 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-440,96">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="115"/>
+            <RowDefinition Height="58"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
+            <ColumnDefinition Width="220"/>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="47" Margin="52,52,0,0" TextWrapping="Wrap" Text="お酒アプリ復習" VerticalAlignment="Top" Width="354"/>
-        <TextBox x:Name="textBox" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="78" Margin="52,104,0,0" TextWrapping="Wrap" Text="お酒の名前！" VerticalAlignment="Top" Width="354"/>
-        <Button x:Name="button" Grid.ColumnSpan="2" Content="実行" HorizontalAlignment="Left" Height="78" Margin="451,104,0,0" VerticalAlignment="Top" Width="184" Click="button_Click"/>
-        <ListView x:Name="listView" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="204" Margin="52,231,0,0" VerticalAlignment="Top" Width="354" SelectionChanged="listView_SelectionChanged"/>
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="お酒アプリ復習" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox" TextWrapping="Wrap" Text="お酒の名前！" Grid.Row="1" Margin="10"/>
+        <Button x:Name="button" Content="実行" Click="button_Click" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10"/>
+        <ListView x:Name="listView" SelectionChanged="listView_SelectionChanged" Grid.Row="2" Grid.ColumnSpan="2" Margin="10"/>
 
     </Grid>
 </Page>

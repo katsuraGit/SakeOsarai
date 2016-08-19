@@ -33,5 +33,11 @@ namespace SakeOsarai
             this.listView.Items.Add(sakeName);
 
          }
+
+        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            this.listView.Items.Remove(listView.SelectedItem);
+            
+        }
     }
 }
